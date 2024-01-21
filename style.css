@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #F6F6F6;
 }
 
 header {
@@ -11,7 +12,10 @@ header {
 }
 
 body {
+    height: 100vh;
+    width: 100%;
     background-color: #000000;
+    color: #F6F6F6;
 }
 
 footer {
@@ -40,4 +44,26 @@ a {
 .portfolio-logo {
     width: 100px;
     height: 100px;
+}
+
+.main-container {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: 615px;
+    height: 482px;
+}
+
+.text-title {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.text-paragraph {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
