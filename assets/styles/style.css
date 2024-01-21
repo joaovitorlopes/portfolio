@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --main-color : #222831;
+    --secondary-color: #EEEEEE;
+    --tertiary-color: #00ADB5;
+    --hover-color : #393E46;
+
+    --primary-font : 'Krona One', sans-serif;
+    --secondary-font : 'Montserrat', sans-serif;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #000000;
-    color: #F6F6F6;
-}
-
-.header-title {
-    color: #F6F6F6;
-    border: 1px solid #22D4FD;
-    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 .page-header {
@@ -27,11 +31,17 @@ body {
 }
 
 .page-header-menu-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: var(--secondary-font);
     font-size: 24px;
-    color: #22D4FD;
+    font-weight: 600;
+    color: var(--tertiary-color);
     text-decoration: none;
+}
+
+.header-title {
+    color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+    padding: 10px;
 }
 
 .main-container {
@@ -51,16 +61,16 @@ body {
 
 .text-title {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--primary-font);
 }
 
 .highlight-title {
-    color: #22D4FD;
+    color: var(--tertiary-color);
 }
 
 .text-paragraph {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-font);
 }
 
 .links-container {
@@ -72,7 +82,7 @@ body {
 }
 
 .links-subtitle {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 24px;
 }
@@ -81,29 +91,28 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--tertiary-color);
     width: 378px;
     text-align: center;
     border-radius: 8px;
-    padding: 21.5px 0;
     font-size: 24px;
     font-weight: 600;
+    padding: 21.5px 0;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
 }
 
 .links-btn:hover {
-    background-color: #272727;
-    cursor: pointer;
+    background-color: var(--hover-color);
 }
 
 .page-footer {
     padding: 24px;
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--main-color);
+    background-color: var(--tertiary-color);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 400;
 }
